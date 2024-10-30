@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "chatty",
+  "version": "${version}",
+  "name": "Chatty",
+  "description": "EarthMC Chat Mod",
+  "authors": [
+    {
+      "name": "Fruitloopins",
+      "contact": {
+        "discord": "fruitloopins"
+      }
+    }
+  ],
+  "contact": {
+    "homepage": "https://lupine.au",
+    "discord": "https://discord.gg/ey6ZvnwAJp",
+    "issues": "https://github.com/jwkerr/Chatty/issues",
+    "sources": "https://github.com/jwkerr/Chatty"
+  },
+  "license": "MIT",
+  "icon": "assets/chatty/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "au.lupine.chatty.client.ChattyClient"
+    ],
+    "modmenu": [
+      "au.lupine.chatty.client.hook.ModMenuIntegration"
+    ]
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.gg/ey6ZvnwAJp",
+        "modmenu.donate": "https://github.com/sponsors/jwkerr"
+      }
+    }
+  },
+  "depends": {
+    "fabricloader": "*",
+    "fabric": "*",
+    "minecraft": ">=1.20.4",
+    "yet_another_config_lib_v3": "*"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}

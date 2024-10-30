@@ -1,0 +1,22 @@
+{
+  "yacl3.config.chatty:config.category.settings": "Settings",
+
+  "yacl3.config.chatty:config.isEnabled": "Enabled",
+  "yacl3.config.chatty:config.isEnabled.desc": "If disabled, the mod will do nothing",
+
+  "yacl3.config.chatty:config.category.settings.group.notifications": "Notifications",
+  "yacl3.config.chatty:config.hideKillMessages": "Hide Kill Messages",
+  "yacl3.config.chatty:config.hideKillMessages.desc": "If enabled, notifications of players being killed will be hidden",
+  "yacl3.config.chatty:config.hideVoteMessages": "Hide Vote Messages",
+  "yacl3.config.chatty:config.hideVoteMessages.desc": "If enabled, notifications of players voting will be hidden",
+  "yacl3.config.chatty:config.hideObamaMessages": "Hide Obama Messages",
+  "yacl3.config.chatty:config.hideObamaMessages.desc": "If enabled, Michelle Obama will not tell you to vote",
+
+  "yacl3.config.chatty:config.category.settings.group.discord": "Discord",
+  "yacl3.config.chatty:config.hideDiscordMessages": "Hide Discord Messages",
+  "yacl3.config.chatty:config.hideDiscordMessages.desc": "If enabled, Discord messages will be hidden according to the specified filter",
+  "yacl3.config.chatty:config.filteredRanks": "Filtered Ranks",
+  "yacl3.config.chatty:config.filteredRanks.desc": "Ranks to filter in the format of 'Player, Premium, Mod', alternatively just write '*' to filter all",
+  "yacl3.config.chatty:config.invertDiscordFilter": "Invert Filtered Ranks",
+  "yacl3.config.chatty:config.invertDiscordFilter.desc": "Invert the specified filter ranks, will allow rather than hide their messages"
+}
