@@ -32,6 +32,8 @@ public class FilterManager {
         Component component = text.asComponent();
         String message = PlainTextComponentSerializer.plainText().serialize(component);
 
+        if (message.isEmpty()) return false;
+
         if (config.hideKillMessages && isMessageKillMessage(message)) return false;
         if (config.hideVoteMessages && isMessageVoteMessage(message)) return false;
         if (config.hideObamaMessages && isMessageFromObama(message)) return false;
@@ -82,7 +84,9 @@ public class FilterManager {
     }
 
     private boolean isMessageFromObama(String message) {
-        return message.startsWith("[Michelle Obama -> me]");
+        return message.startsWith("[Michelle Obama -> me]")
+                || message.startsWith(">https://minecraftservers.org/vote/383495?username=")
+                || message.startsWith(">https://minecraft-mp.com/server/332214/vote/?username=");
     }
 
     private boolean isMessageFromDiscord(String message) {
