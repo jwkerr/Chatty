@@ -40,6 +40,11 @@ public class ChattyConfig {
     public boolean isEnabled = true;
 
     @SerialEntry
+    @AutoGen(category = SETTINGS)
+    @Boolean(colored = true)
+    public boolean hideEmptyMessages = false;
+
+    @SerialEntry
     @AutoGen(category = SETTINGS, group = NOTIFICATIONS)
     @Boolean(colored = true)
     public boolean hideKillMessages = false;

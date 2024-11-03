@@ -4,6 +4,9 @@
   "yacl3.config.chatty:config.isEnabled": "Enabled",
   "yacl3.config.chatty:config.isEnabled.desc": "If disabled, the mod will do nothing",
 
+  "yacl3.config.chatty:config.hideEmptyMessages": "Hide Empty messages",
+  "yacl3.config.chatty:config.hideEmptyMessages.desc": "If enabled, any messages with no text such as a single dividing space will be hidden",
+
   "yacl3.config.chatty:config.category.settings.group.notifications": "Notifications",
   "yacl3.config.chatty:config.hideKillMessages": "Hide Kill Messages",
   "yacl3.config.chatty:config.hideKillMessages.desc": "If enabled, notifications of players being killed will be hidden",

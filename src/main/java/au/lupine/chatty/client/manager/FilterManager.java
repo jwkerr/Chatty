@@ -14,6 +14,11 @@ public class FilterManager {
 
     private static FilterManager instance;
 
+    private static String lastVoteMessage = "";
+
+    private static final String COMMAND_FEEDBACK_VOTE_MESSAGE = "Click on both links to vote and win gold crates!";
+    private static final String MICHELLE_OBAMA_VOTE_MESSAGE = "[Michelle Obama -> me]";
+
     private FilterManager() {}
 
     public static FilterManager getInstance() {
@@ -32,7 +37,7 @@ public class FilterManager {
         Component component = text.asComponent();
         String message = PlainTextComponentSerializer.plainText().serialize(component);
 
-        if (message.isEmpty()) return false;
+        if (config.hideEmptyMessages && message.isEmpty()) return false;
 
         if (config.hideKillMessages && isMessageKillMessage(message)) return false;
         if (config.hideVoteMessages && isMessageVoteMessage(message)) return false;
@@ -84,8 +89,17 @@ public class FilterManager {
     }
 
     private boolean isMessageFromObama(String message) {
-        return message.startsWith("[Michelle Obama -> me]")
-                || message.startsWith(">https://minecraftservers.org/vote/383495?username=")
+        if (message.startsWith(MICHELLE_OBAMA_VOTE_MESSAGE)) {
+            lastVoteMessage = MICHELLE_OBAMA_VOTE_MESSAGE;
+            return true;
+        } else if (message.startsWith(COMMAND_FEEDBACK_VOTE_MESSAGE)) {
+            lastVoteMessage = COMMAND_FEEDBACK_VOTE_MESSAGE;
+            return false;
+        }
+
+        if (!lastVoteMessage.equals(MICHELLE_OBAMA_VOTE_MESSAGE)) return false; // These messages are coming as a result of player command feedback from /vote
+
+        return message.startsWith(">https://minecraftservers.org/vote/383495?username=")
                 || message.startsWith(">https://minecraft-mp.com/server/332214/vote/?username=");
     }
 
