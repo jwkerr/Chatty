@@ -2,6 +2,7 @@ package au.lupine.chatty.client.manager;
 
 import au.lupine.chatty.client.config.ChattyConfig;
 import net.fabricmc.fabric.api.client.message.v1.ClientReceiveMessageEvents;
+import net.kyori.adventure.platform.modcommon.MinecraftClientAudiences;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer;
 import net.minecraft.text.Text;
@@ -34,7 +35,7 @@ public class FilterManager {
         ChattyConfig config = ChattyConfig.getInstance();
         if (!config.isEnabled) return true;
 
-        Component component = text.asComponent();
+        Component component = MinecraftClientAudiences.of().asAdventure(text);
         String message = PlainTextComponentSerializer.plainText().serialize(component);
 
         if (config.hideEmptyMessages && message.isEmpty()) return false;
