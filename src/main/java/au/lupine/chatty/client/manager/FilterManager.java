@@ -35,7 +35,13 @@ public class FilterManager {
         ChattyConfig config = ChattyConfig.getInstance();
         if (!config.isEnabled) return true;
 
-        Component component = MinecraftClientAudiences.of().asAdventure(text);
+        Component component;
+        try {
+            component = MinecraftClientAudiences.of().asAdventure(text);
+        } catch (Exception e) {
+            return true; // Something went wrong, but we can just ignore it (enchantment fix)
+        }
+
         String message = PlainTextComponentSerializer.plainText().serialize(component);
 
         if (config.hideEmptyMessages && message.isEmpty()) return false;
