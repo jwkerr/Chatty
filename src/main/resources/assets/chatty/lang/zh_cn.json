@@ -1,0 +1,25 @@
+{
+  "yacl3.config.chatty:config.category.settings": "设置",
+
+  "yacl3.config.chatty:config.isEnabled": "启用",
+  "yacl3.config.chatty:config.isEnabled.desc": "如果禁用，模组将自动罢工",
+
+  "yacl3.config.chatty:config.hideEmptyMessages": "隐藏空消息",
+  "yacl3.config.chatty:config.hideEmptyMessages.desc": "如果启用，将隐藏没有文本的消息，例如仅包含一个分隔空格的消息",
+
+  "yacl3.config.chatty:config.category.settings.group.notifications": "通知",
+  "yacl3.config.chatty:config.hideKillMessages": "隐藏击杀消息",
+  "yacl3.config.chatty:config.hideKillMessages.desc": "如果启用，你将看不到世界的残酷",
+  "yacl3.config.chatty:config.hideVoteMessages": "隐藏投票消息",
+  "yacl3.config.chatty:config.hideVoteMessages.desc": "如果启用，将隐藏关于玩家投票的通知",
+  "yacl3.config.chatty:config.hideObamaMessages": "隐藏奥巴马消息",
+  "yacl3.config.chatty:config.hideObamaMessages.desc": "如果启用，米歇尔·奥巴马将不会提醒你投票",
+
+  "yacl3.config.chatty:config.category.settings.group.discord": "Discord",
+  "yacl3.config.chatty:config.hideDiscordMessages": "隐藏 Discord 消息",
+  "yacl3.config.chatty:config.hideDiscordMessages.desc": "如果启用，将根据指定的过滤规则隐藏 Discord 消息",
+  "yacl3.config.chatty:config.filteredRanks": "过滤的头衔",
+  "yacl3.config.chatty:config.filteredRanks.desc": "要过滤的头衔，格式为 'Player, Premium, Mod'，或者直接写 '*' 来过滤所有",
+  "yacl3.config.chatty:config.invertDiscordFilter": "反转过滤头衔",
+  "yacl3.config.chatty:config.invertDiscordFilter.desc": "反转指定的过滤头衔，将允许而非隐藏他们的消息"
+}
