@@ -1,0 +1,25 @@
+{
+  "yacl3.config.chatty:config.category.settings": "設定",
+
+  "yacl3.config.chatty:config.isEnabled": "有効",
+  "yacl3.config.chatty:config.isEnabled.desc": "無効にすると、モッドは何も行いません",
+
+  "yacl3.config.chatty:config.hideEmptyMessages": "空のメッセージを非表示",
+  "yacl3.config.chatty:config.hideEmptyMessages.desc": "有効にすると、テキストが含まれていないメッセージ（例：単一の区切りスペースのみのもの）を非表示にします",
+
+  "yacl3.config.chatty:config.category.settings.group.notifications": "通知",
+  "yacl3.config.chatty:config.hideKillMessages": "キルメッセージを非表示",
+  "yacl3.config.chatty:config.hideKillMessages.desc": "有効にすると、プレイヤーが殺害された時の通知を非表示にします",
+  "yacl3.config.chatty:config.hideVoteMessages": "投票メッセージを非表示",
+  "yacl3.config.chatty:config.hideVoteMessages.desc": "有効にすると、プレイヤーの投票通知を非表示にします",
+  "yacl3.config.chatty:config.hideObamaMessages": "オバマメッセージを非表示",
+  "yacl3.config.chatty:config.hideObamaMessages.desc": "有効にすると、ミシェル・オバマが投票を促すメッセージが表示されなくなります",
+
+  "yacl3.config.chatty:config.category.settings.group.discord": "Discord",
+  "yacl3.config.chatty:config.hideDiscordMessages": "Discordメッセージを非表示",
+  "yacl3.config.chatty:config.hideDiscordMessages.desc": "有効にすると、指定されたフィルターに基づいてDiscordメッセージを非表示にします",
+  "yacl3.config.chatty:config.filteredRanks": "フィルター対象のランク",
+  "yacl3.config.chatty:config.filteredRanks.desc": "『Player, Premium, Mod』の形式でフィルターするランクを指定、または '*' と入力して全てをフィルターします",
+  "yacl3.config.chatty:config.invertDiscordFilter": "Discordフィルターの反転",
+  "yacl3.config.chatty:config.invertDiscordFilter.desc": "指定されたフィルターランクを反転し、メッセージを非表示にする代わりに許可します"
+}
