@@ -9,7 +9,7 @@
 
   "yacl3.config.chatty:config.category.settings.group.notifications": "通知",
   "yacl3.config.chatty:config.hideKillMessages": "キルメッセージを非表示",
-  "yacl3.config.chatty:config.hideKillMessages.desc": "有効にすると、世界の残酷さを目にすることはない",
+  "yacl3.config.chatty:config.hideKillMessages.desc": "有効にすると、プレイヤーが殺害された時の通知を非表示にします",
   "yacl3.config.chatty:config.hideVoteMessages": "投票メッセージを非表示",
   "yacl3.config.chatty:config.hideVoteMessages.desc": "有効にすると、プレイヤーの投票通知を非表示にします",
   "yacl3.config.chatty:config.hideObamaMessages": "オバマメッセージを非表示",
