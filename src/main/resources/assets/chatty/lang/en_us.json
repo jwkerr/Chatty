@@ -14,6 +14,8 @@
   "yacl3.config.chatty:config.hideVoteMessages.desc": "If enabled, notifications of players voting will be hidden",
   "yacl3.config.chatty:config.hideObamaMessages": "Hide Obama Messages",
   "yacl3.config.chatty:config.hideObamaMessages.desc": "If enabled, Michelle Obama will not tell you to vote",
+  "yacl3.config.chatty:config.hideStoreMessages": "Hide Store Messages",
+  "yacl3.config.chatty:config.hideStoreMessages.desc": "If enabled, messages from store.earthmc.net will be hidden",
 
   "yacl3.config.chatty:config.category.settings.group.discord": "Discord",
   "yacl3.config.chatty:config.hideDiscordMessages": "Hide Discord Messages",

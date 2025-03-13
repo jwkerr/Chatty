@@ -60,6 +60,12 @@ public class ChattyConfig {
     public boolean hideObamaMessages = false;
 
     @SerialEntry
+    @AutoGen(category = SETTINGS, group = NOTIFICATIONS)
+    @Boolean(colored = true)
+    public boolean hideStoreMessages = false;
+
+
+    @SerialEntry
     @AutoGen(category = SETTINGS, group = DISCORD)
     @Boolean(colored = true)
     public boolean hideDiscordMessages = false;

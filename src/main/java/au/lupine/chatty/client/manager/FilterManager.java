@@ -49,6 +49,7 @@ public class FilterManager {
         if (config.hideKillMessages && isMessageKillMessage(message)) return false;
         if (config.hideVoteMessages && isMessageVoteMessage(message)) return false;
         if (config.hideObamaMessages && isMessageFromObama(message)) return false;
+        if (config.hideStoreMessages && isMessageStoreMessage(message)) return false;
 
         if (!config.hideDiscordMessages) return true;
         if (!isMessageFromDiscord(message)) return true;
@@ -108,6 +109,10 @@ public class FilterManager {
 
         return message.startsWith(">https://minecraftservers.org/vote/383495?username=")
                 || message.startsWith(">https://minecraft-mp.com/server/332214/vote/?username=");
+    }
+
+    private boolean isMessageStoreMessage(String message) {
+        return message.startsWith("[store.earthmc.net -> me] Click here to upgrade to Premium.");
     }
 
     private boolean isMessageFromDiscord(String message) {
